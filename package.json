@@ -1,6 +1,6 @@
 {
   "author": "Kelvin Nguyen",
-  "name": "jsonresume-theme-caffeine",
+  "name": "jsonresume-theme-levelup",
   "description": "Caffeine theme for JSON Resume",
   "version": "2.0.1",
   "keywords": [
@@ -11,7 +11,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/kelyvin/jsonresume-theme-caffeine"
+    "url": "https://github.com/BMomani/jsonresume-theme-levelup"
   },
   "license": "MIT",
   "scripts": {
@@ -54,8 +54,11 @@
     "address-format": "0.0.3",
     "handlebars": "^4.0.5",
     "handlebars-wax": "^6.1.0",
+    "iso-3166-1": "^2.1.1",
+    "markdown-it": "^13.0.1",
     "moment": "^2.17.1",
-    "resume-cli": "2.2.4",
+    "node-sass": "4.14.0",
+    "resume-cli": "^2.2.4",
     "swag": "^0.7.0"
   }
 }

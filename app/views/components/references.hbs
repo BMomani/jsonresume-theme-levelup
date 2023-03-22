@@ -1,18 +1,20 @@
 {{#if resume.references.length}}
-<div class="container references-container">
-  {{> title value="References"}}
+<div class="w3-container w3-card w3-white w3-margin-bottom references-container">
+  {{> title value="References" icon="thumbs-up"}}
 
   {{#each resume.references}}
   <section class="item clearfix">
     {{#if reference}}
-      <i class="fa fa-quote-left pull-left" aria-hidden="true"></i>
+      <i style="margin-left: 15px;" class="fa fa-quote-left pull-left" aria-hidden="true"></i>
       <blockquote>
         {{reference}}
       </blockquote>
     {{/if}}
 
-    {{#if name}}
-      <h5 class="pull-right"> — {{name}}</h5>
+    {{#if nameonly}}
+      <h5 class="ref-name pull-right"> — <a href="{{url}}">{{nameonly}}</a> - {{position}} @ <a href="companyWebsite">{{company}}</a></h5>
+    {{else}}
+      <h5 class="ref-name pull-right"> — {{name}}</h5>
     {{/if}}
   </section>
   {{/each}}

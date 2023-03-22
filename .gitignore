@@ -37,6 +37,6 @@ bower_components
 public
 
 # Keep your personal resume.json private and any generated pdf's
-resume.json
+resume_fadi.json
 resume_*.json
 resume.pdf

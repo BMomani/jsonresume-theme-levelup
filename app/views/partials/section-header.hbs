@@ -1,25 +1,31 @@
 <div class="section-header clearfix">
-  {{#if name}}
-  <h3 class="bold pull-left">
+  {{#if header}}
     {{#if website}}
-      <a href="{{website}}" target="_blank">
-        {{name}} <i class="fa fa-external-link" aria-hidden="true"></i>
-      </a>
+      <h5 class="w3-opacity"><b>{{header}}</b> /
+        <a style="text-decoration-line: none;" href="{{website}}" target="_blank">
+          <i>{{subheader}} </i><i class="fa fa-external-link" aria-hidden="true"></i>
+        </a>
+      </h5>
     {{else}}
-      {{name}}
+      <h5 class="w3-opacity"><b>{{header}} / <i>{{subheader}}</i></b></h5>
     {{/if}}
-  </h3>
   {{/if}}
-  <h5 class="italic pull-right">
+  <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>
     {{#if startDate}}
-      <span class="startDate">{{formatDate startDate}}</span>
-    {{#if endDate}}
-      <span class="endDate"> - {{formatDate endDate}}</span>
-    {{else}}
-      <span class="endDate"> - Present</span>
-    {{/if}}
+      {{formatDate startDate}}
+      {{#if endDate}}
+        - {{formatDate endDate}}
+      {{else}}
+        - <span class="w3-tag w3-teal w3-round">Current</span>
+      {{/if}}
     {{else if releaseDate}}
       {{formatDate releaseDate}}
     {{/if}}
-  </h5>
+    {{#if duration}}
+      <span class="w3-text-gray"><i class="fa fa-clock-o fa-fw w3-margin-left"></i> {{duration}}</span>
+    {{/if}}
+    {{#if gpa}}
+      <span class="w3-text-gray"><i class="fa fa-certificate fa-fw w3-margin-left"></i> Grade Earned: {{gpa}}</span>
+    {{/if}}
+  </h6>
 </div>

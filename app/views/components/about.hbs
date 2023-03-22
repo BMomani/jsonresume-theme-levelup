@@ -1,29 +1,29 @@
 {{#resume.basics}}
-<div class="container about-container">
-  {{> title value="About"}}
-
-  {{#if location}}
-    {{#location}}
-    {{> info-tag text=(formatAddress address city region postalCode countryCode) icon="fa-map-marker"}}
-    {{/location}}
-  {{/if}}
-
-  {{#if email}}
-    {{> info-tag text=this.email icon="fa-envelope-o"}}
-  {{/if}}
-
-  {{#if phone}}
-    {{> info-tag text=this.phone icon="fa-mobile"}}
-  {{/if}}
-
-  {{#if website}}
-    {{> info-tag text=this.website icon="fa-desktop" url=this.website}}
-  {{/if}}
-
-  {{#if profiles}}
-    {{#each profiles}}
-        {{> social}}
-    {{/each}}
-  {{/if}}
-</section>
+  <div class="w3-white w3-text-grey w3-card-4 w3-margin-bottom">
+    <div class="w3-display-container">
+      <img src="{{picture}}" style="width:100%" alt="Avatar">
+      <div class="w3-display-bottomleft w3-container w3-text-white">
+        <h1 class="resume-name">{{name}}
+        {{#if website2}}
+          <a href="{{website2}}"><i class="fa fa-globe fa-fw w3-margin-right w3-large"></i></a>
+        {{/if}}
+        </h1>
+      </div>
+    </div>
+    <div class="w3-container">
+      <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>{{label}}</p>
+      {{#if location}}
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>{{calcLocation location}}</p>
+      {{/if}}
+      {{#if email}}
+        <p class="text-ellipsis" title="{{email}}"><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i><a href="mailto:{{email}}?subject=Job Opportunity - We are Impressed with your resume Basheer">{{email}}</a></p>
+      {{/if}}
+      {{#if phone}}
+        <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i><a href="tel:{{phone}}">{{phone}}</a></p>
+      {{/if}}
+      {{#if websiteCaption}}
+        <p class="text-ellipsis"><i class="fa fa-globe fa-fw w3-margin-right w3-large w3-text-teal"></i><a href="{{website}}">{{websiteCaption}}</a></p>
+      {{/if}}
+    </div>
+  </div>
 {{/resume.basics}}

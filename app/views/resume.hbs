@@ -4,34 +4,57 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+<!--  <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
   <title>{{#resume.basics}}{{name}}{{/resume.basics}}</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <style title="resume-css">
+    html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+    .text-ellipsis{
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      width: 100%;
+    }
+    </style>
+
   <style>
     {{{css}}}
   </style>
 </head>
 
-<body>
-  <main id="resume" class="page">
-    {{> resume-header}}
-    <div class="resume-content">
-      <aside class="left-column">
+<body class="w3-light-grey">
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+    <!-- Left Column -->
+    <div class="w3-third">
         {{> about }}
         {{> skills }}
         {{> languages }}
         {{> interests }}
-      </aside>
-      <div class="right-column">
+        {{> references }}
+      <!-- End Left Column -->
+    </div>
+
+    <!-- Right Column -->
+    <div class="w3-twothird">
         {{> summary}}
         {{> work }}
         {{> volunteer }}
         {{> education }}
         {{> awards }}
         {{> publications }}
-        {{> references }}
-      </div>
+      <!-- End Right Column -->
     </div>
-  </main>
-</body>
 
+    <!-- End Grid -->
+  </div>
+
+  <!-- End Page Container -->
+</div>
+
+</body>
 </html>
