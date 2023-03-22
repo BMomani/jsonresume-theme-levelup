@@ -1,7 +1,7 @@
 {
   "author": "Kelvin Nguyen",
   "name": "jsonresume-theme-levelup",
-  "description": "Caffeine theme for JSON Resume",
+  "description": "Levelup theme for JSON Resume",
   "version": "2.0.1",
   "keywords": [
     "json",
@@ -14,6 +14,8 @@
     "url": "https://github.com/BMomani/jsonresume-theme-levelup"
   },
   "license": "MIT",
+  "author": "Basheer Almomani",
+  "type": "module",
   "scripts": {
     "start": "npx gulp && npx resume serve --theme .",
     "export": "npx gulp && npx resume export resume --format pdf --theme ."
