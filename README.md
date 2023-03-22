@@ -1,10 +1,10 @@
-# jsonresume-theme-caffeine ![](https://travis-ci.org/kelyvin/jsonresume-theme-caffeine.svg?branch=master) [![npm version](https://badge.fury.io/js/jsonresume-theme-caffeine.svg)](https://www.npmjs.com/package/jsonresume-theme-caffeine)
+# jsonresume-theme-levelup 
 
-This is the Caffeine theme repository for the [Json Resume](https://jsonresume.org/) project. Unlike the [json-theme-boilerplate](https://github.com/jsonresume/jsonresume-theme-boilerplate) project, this environment has a much improved developer environment to make editing your theme super easy to do.
+This is the levelup theme repository for the [Json Resume](https://jsonresume.org/) project. Unlike the [json-theme-boilerplate](https://github.com/jsonresume/jsonresume-theme-boilerplate) project, this environment has a much improved developer environment to make editing your theme super easy to do.
 
 > Recently upgraded to v2, which simplifies the development environment, uses `yarn` over `npm`, no longer requires global installs, and updates `resume-cli` v2 (since v3 is still not stable).
 
-![Richard Hendriks Reume](http://i.imgur.com/yktvc8m.png)
+![Basheer Almomani Reume](https://i.ibb.co/HdFgSsT/Basheer-Al-Momani-resume.jpg)
 
 ## Table of Contents
 
