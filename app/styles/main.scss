@@ -23,14 +23,14 @@ html, body {
 }
 
 .w3-row-padding>.w3-third {
-  padding: 0px 4px;
+  padding: 0 4px;
 }
 .w3-margin-bottom {
   margin-bottom: 10px!important;
 }
 
 .w3-container, .w3-panel {
-  padding: 0em 7px;
+  padding: 0 7px;
 }
 
 h1 {
@@ -78,10 +78,6 @@ hr {
   margin-right: 9px!important;
 }
 
-h4.bold {
-  margin-left: 19px;
-}
-
 .ref-name {
   margin-left: 15px;
 }
@@ -93,3 +89,12 @@ p.summary, p.summary+p {
   font-size: 23px;
   text-shadow: 3px -1px 3px #000;
 }
+
+h4.bold {
+  margin-left: 20px;
+}
+
+// uncomment for export
+//.w3-white.w3-text-grey.w3-card-4.w3-margin-bottom , .w3-card, .w3-card-2 {
+//  box-shadow: unset;
+//}
